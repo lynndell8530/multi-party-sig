@@ -77,6 +77,7 @@ func do(t *testing.T, id party.ID, ids []party.ID, threshold int, message []byte
 	assert.True(t, cTaproot.PublicKey.Verify(taprootSignature, message))
 }
 
+// lynndell
 func TestFrost(t *testing.T) {
 	N := 5
 	T := N - 1
